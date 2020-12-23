@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <h1 id="title">STARWARS</h1>
+      <h2>Survey</h2>
+      <p id="description">collecting data from a long time ago...</p>
+      <p>in a galaxy far, far away...</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="form-group">
+            <div class="top-inputs">
+          <label for="name" id="name-label">Name
+            <input type="text" name="name" id="name" placeholder="Luke Skywalker" required>
+          </label>
+          <label for="email" id="email-label">Email
+            <input type="email" name="email" id="email" placeholder="rebelscum@gmail.com" required>
+          </label>
+        </div>
+          <label for="number" id="number-label">
+            <p>On a scale of 1-10 how much do you like Star Wars?</p>
+            <input type="number" min="1" max="10" id="number" placeholder="10">
+          </label>
+    
+          <p id="dropdown-title">Favorite planet in the Star Wars universe</p>
+          <select name="dropdown" id="dropdown">
+            <option disabled selected value>select favorite planet</option>
+            <option value="mustafar">mustafar</option>
+            <option value="tatooine">tatooine</option>
+            <option value="degobah">degobah</option>
+            <option value="endor">endor</option>
+            <option value="kasheek">kasheek</option>
+          </select>
+          <div class="form-group" id="radio-buttons">
+            <p>Choose a faction</p>
+            <label class="container">
+              <input type="radio" name="faction" value="empire" class="radio-button">Empire
+              <span class="checkmark radios"></span>
+            </label>
+            <label class="container">
+              <input type="radio" name="faction" value="rebels" class="radio-button">Rebels
+              <span class="checkmark radios"></span>
+            </label>
+            <label class="container">
+              <input type="radio" name="faction" value="1st-order" class="radio-button">1st Order
+              <span class="checkmark radios"></span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group" id="checkboxes">
+          <p>What is your favorite episode?</p>
+          <span class="clue">(Check all that apply)</span>
+          <label class="container">
+            <input type="checkbox" value="1" class="checkboxes">Episode 1
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">
+            <input type="checkbox" value="2" class="checkboxes">Episode 2
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">
+            <input type="checkbox" value="3" class="checkboxes">Episode 3
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">
+            <input type="checkbox" value="4" class="checkboxes">Episode 4
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">
+            <input type="checkbox" value="5" class="checkboxes">Episode 5
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">
+            <input type="checkbox" value="6" class="checkboxes">Episode 6
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">
+            <input type="checkbox" value="7" class="checkboxes">Episode 7
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">
+            <input type="checkbox" value="8" class="checkboxes">Episode 8
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">
+            <input type="checkbox" value="9" class="checkboxes">Episode 9
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Any comments..?</p>
+          <textarea name="comments" id="comments" class="text-area" placeholder="enter comments here"></textarea>
+    
+          <button id="submit" type="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+</body>
+</html>
