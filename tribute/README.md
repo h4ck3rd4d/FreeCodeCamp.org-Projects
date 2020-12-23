@@ -1,4 +1,4 @@
-#Free Code Camp Tribute Page Project
+# Free Code Camp Tribute Page Project
 
 ## This is my first project from the Free Code Camp Responsive Web Design Certification
 
@@ -23,7 +23,7 @@ User Story #8: The img element should responsively resize, relative to the width
 User Story #9: The img element should be centered within its parent element.
 
 
-##Outcomes
+## Outcomes
 
 I learned and explored structuring my page elements utilizing flex box method.
 I explored different CSS techniques and created an animation that gives the 'Metallica' title a flame effect.
@@ -31,5 +31,5 @@ Explored initial ways of creating mobile responsive pages
 
 As this was my first project there are lots of things to work on, however overall I am satisfied as a first attempt.
 
-###TO-DO
+### TO-DO
 Make design more modern.
