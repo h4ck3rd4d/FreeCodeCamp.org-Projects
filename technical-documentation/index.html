@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="top-of-page"></div>
+<div class="nav-div">
+  <nav id="navbar">
+    <header id="menu">Menu</header>
+    <a href="#What_Are_Loops?" class="nav-link">What Are Loops?</a>
+    <a href="#For_Loop" class="nav-link">For Loop</a>
+    <a href="#While_Loop" class="nav-link">While Loop</a>
+    <a href="#Nested_Loops" class="nav-link">Nested Loops</a>
+    <a href="#Infinite_Loop" class="nav-link">Infinite Loop</a>
+
+  </nav>
+</div>
+<a href="#top-of-page" id="back-to-top" class="fas fa-arrow-circle-up"></a>
+<main id="main-doc">
+  <h1>Looping in Python</h1>
+  <figure>
+    <img src="https://i0.wp.com/evomics.org/wp-content/uploads/2011/09/python-logo-glassy.png" alt="Python programming logo">
+  </figure>
+  <section id="What_Are_Loops?" class="main-section">
+    <header>What Are Loops?</header>
+    <p>Loops are a way to simplify and shorten your code. They are great for iteration and repeating simple calculations.</p>
+    <p>For example, say you had the following code.</p>
+    <code>
+      <pre>
+    i = 0 
+    i += 1 
+    print(i) 
+    >>1 
+    i += 1 
+    print(i) 
+    >>2
+    </pre>
+    </code>
+    <p>This simple program declares a variable i and initializes it equal to 0. The program then increments i by 1 and then prints the value of i to the screen. It completes this process a total of two times. All in all a total of 5 lines of code. Not bad. But what if we wanted to do this 10 times, or 100 times? What if our program needed to do this 1,000 times?</p>
+    <p>This is where loops come in to play.</p>
+  </section>
+  <section id="For_Loop" class="main-section">
+    <header>For Loop</header>
+    <p>The first type of loop we will discuss is the <strong>For Loop</strong>. The for loop has a simple syntax that is easy to understand.</p>
+    <code>
+      <pre>
+    for each in (any iterable): 
+    do something</pre>
+    </code>
+    <p>The for loop starts with the reserved python keyword "for" and next declares a variable, in our example "each". This variable can be called anything, but to keep your code easy to follow it's best to name it the singular version of your iterable's name. For example if you had a list variable with the name "items" most pythoner's would do </p>
+    <code>
+      <pre>
+    for item in items:
+      do something...
+    </pre>
+    </code>
+    <p>For loops can be used to iterate over any type of iterable object. Any of the following can be used with a for loop</p>
+    <ul>
+      <li>Lists</li>
+      <li>Dictionaries</li>
+      <li>Sets</li>
+      <li>Tuples</li>
+      <li>Strings</li>
+    </ul>
+    <p>Next, the body of the for loop is where you put what you want to happen for each round of the for loop. Let's look at our original example but this time lets have it go for 10 times</p>
+    <code>
+      <pre>
+    for i in range(10):
+        i += 1
+        print(i)
+
+    >>1
+    >>2
+    ..
+    ..
+    >>9
+    >>10
+    </pre>
+    </code>
+    <p>Look at that glorious for loop in action. Only took three lines what would have taken us 20. What if we wanted to make it go 100 times? Just change the range() number. for i in range(100):</p>
+    <p>1,000? 10,000? 100,000 times?? You guessed. We just change the amount passed into the range function, but the remainder of the for loop stays the same. This is the power of the for loop.</p>
+  </section>
+  <section id="While_Loop" class="main-section">
+    <header>While Loop</header>
+    <p>For loops are great for when we know exactly how many times we want to iterate through the loop. But what if we didn't? What if we wanted the loop to execute until a certain condition was met but we didn't know exactly when that would happen?</p>
+    <p>One way to do this is to add an if statement to our for loop body and if it evaluates to true, execute a "break" statement that will exit the loop</p>
+    <code>
+      <pre>
+    sum = 0
+    for num in nums:
+      if num == 2:
+        break
+      sum += num
+    </pre>
+    </code>
+    <p>The above for loop will iterate over through the iterable named nums and checks to see if each num is equal to 2. If the current num is equal to 2, the break statement is excecuted and the for loop is exited. Otherwise, the num gets added to the variable sum and the loop continues iterating over nums</p>
+    <p>This certainly gets the job done. But there is another way. Enter the while loop.</p>
+    <code>
+      <pre>
+    running = True
+    while running:
+        print("Enter a letter:",
+             "(press q to quit)")
+        ans = input()
+        if ans == "q":
+            running = False
+        else:
+            do something
+    </pre>
+    </code>
+    <p>The code above has a variable "running" initialized to the boolean value of True. The while loop condition checks to see if running == True. If so it prompts the user for input and saves the response to the variable "ans". If the user enters anything other than "q", the else statement is entered and the loop repeats until the user enters "q". Once the user presses "q" the if statement is entered and running is changed to False. This will fail the while loop condition and then the loop is exited. This type of scenario is most common in games and other programs where the program depend on user input to exit.</p>
+  </section>
+  <section id="Nested_Loops" class="main-section">
+    <header>Nested Loops</header>
+    <p>Sometimes there are situations where you may find it useful to have one loop nested inside another loop. For example, say you had a two dimensional list, that is a list that contains other lists</p>
+    <code>
+      <pre>
+    nums = [[0,1,2,3],[4,5,6,7]]
+    </pre>
+    </code>
+    <p>When you need to iterate over each individual item in the list you can used a nested for loop</p>
+    <code>
+      <pre>
+    nums = [[0,1,2,3],[4,5,6,7]]
+    for i in range(len(nums)):
+        for j in range(len(nums[i])):
+            print(nums[i][j])
+            
+    >>0
+    >>1
+    ..
+    ..
+    >>6
+    >>7
+    </pre>
+    </code>
+    <p>You can also nest while loops.</p>
+    <code>
+      <pre>
+    var1 = True
+    var2 = True
+    
+    while var1:
+        while var2:
+            if something == this:
+                var2 = False
+            else:
+                do something...
+        if something == this:
+            var1 = False
+        else:
+            do something...
+    </pre>
+    </code>
+    <p>In some cases, you can even nest a for loop inside a while loop and vice versa</p>
+    <code>
+      <pre>
+    for i in range(10):
+      while i < 5:
+          print(i)
+          i += 1
+    </pre>
+    </code>
+    <code>
+      <pre>
+    i = 0
+    while i < 10:
+        for j in range(5):
+            i += j
+    </pre>
+    </code>
+    <p>While these setups can be useful, caution is needed as they can be tricky to debug and there usually is a simpler way to accomplish the same task</p>
+  </section>
+  <section id="Infinite_Loop" class="main-section">
+    <header>Infinite Loop</header>
+    <p>The last topic of discussion pertains only to the while loop. When constructing your while loop, it is critical that your exit condition is actually possible to be executed. If not, you will end up with the dreaded <strong>Infinite Loop</strong> For example.</p>
+    <code>
+      <pre>
+    i = 0
+    while i < 10:
+      i -= 1
+      print(i)
+      
+    >> -1
+    >> -2
+    ..
+    ..
+    >> -infinity
+    </pre>
+    </code>
+    <p>The while loop above will never exit as the conditionan i less than 10, will always be true since in the body of the loop, i is decremented instead of incremented so i will never be greater than 10 and the loop just goes on and on and on and on...</p>
+  </section>
+  <p>I hope this helps you find a good understanding of the different loop options python has to offer and how you can utilise them best to improve your coding.</p>
+</main>
+
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>
