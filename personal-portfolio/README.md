@@ -4,7 +4,7 @@
 
 This project was built with the following guidelines
 
-## -------------------------------------------------------------
+
 ### Rules
 ## -------------------------------------------------------------
 
@@ -30,7 +30,7 @@ User Story #10: The height of the welcome section should be equal to the height 
 
 User Story #11: The navbar should always be at the top of the viewport.
 
-## ---------------------------------------------------
+
 ### Outcomes
 ## ---------------------------------------------------
 
