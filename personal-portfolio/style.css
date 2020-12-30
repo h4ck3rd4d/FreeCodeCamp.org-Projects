@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan&family=Bowlby+One+SC&family=Goldman&family=Press+Start+2P&display=swap');
+
+body{
+  position: relative;
+  font-family: 'Goldman', cursive;
+  background-color: #DDDDDD;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  top:0;
+  text-align: center;
+  display: inline-block;
+  left: 0;
+  background-color: #222831;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+}
+
+nav a{
+  margin: 0;
+  text-decoration: none;
+  color: #f05454;
+  
+}
+nav a:hover{
+  background-color: #ddd;
+  padding: 10px 10px;
+}
+
+#welcome-section{
+  height: 100vh; 
+}
+#banner-name{
+  margin: 50px;
+  font-size: 2.5rem;
+  color: #222831;
+  text-shadow: 1px 1px white, 2px 2px  black;
+}
+
+.quote{
+  background-color: #f05454;
+  color: #fff;
+  font-size: 1.2em;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #222831;
+  border-radius: 20px;
+  padding: 10px;  
+  box-shadow: 5px 5px #111831, 10px 10px 5px 5px rgba(0,0,0,.4);
+}
+
+#projects{
+  width: 100%;
+  background-color: #30475e;
+  padding: 15px 0;
+}
+.project-tile{
+  border-radius: 10px;
+  background-color: #222831;
+  width:80%;
+  padding: 0;
+  margin: 25px auto;
+  box-shadow: 5px 5px 5px 1px rgba(0,0,0,.7);
+}
+
+.project-tile:hover{
+  width: 83%;
+}
+
+.project-tile p{
+  color:white;
+  padding-top: 15px;
+  margin: 10px auto 0;
+  vertical-align: middle;
+  padding: 5px 0;
+  font-size: 1.3rem;
+}
+
+#projects a img{
+  margin: 5px auto;
+  width: 90%;
+  border-radius: 10px;
+}
+
+#contact{
+  background-color: #f05454;
+  height: 50px;
+}
+
+.socials{
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+.socials a{
+  text-decoration: none;
+  color: #ddd;
+  font-size: 1.5rem;
+}
+
+.socials a:visited{
+  color: #ddd;
+}
+
+.socials a:active{
+  color: #222831;
+}
+.socials a:hover{
+  background-color: #ddd;
+  padding: .75rem 0;
+  width: 3rem;
+  color: #222831;
+}
+
+@media screen and (min-width:450px){
+  #banner-name{
+    margin: 150px auto 60px;
+  }
+}
+@media screen and (min-width:600px){
+  #banner-name{
+    font-size: 4rem;
+    margin: 100px auto 60px;
+  }
+  
+  .project-tile {
+    width: 70%;
+  }
+  .project-tile p{
+    font-size: 1.5rem;
+  }
+  .project-tile:hover{
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 800px){
+  nav a {
+    font-size: 1.5rem;
+  }
+  nav a:hover{
+    padding: 5px 0px;
+  }
+  .project-tile{
+    max-width: 500px;
+  }
+  .socials{
+    justify-content: center; 
+  }
+  .socials a{
+    padding: 0 25px;
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  #projects{
+    display: flex;
+    justify-content: space-between;
+    padding: 140px 0;
+  }
+  .project-tile{
+    margin: 20px;
+  }
+  .project-tile:hover{
+    width: 70%;
+    box-shadow: 0px 0px 5px white;
+  }
+
+  #banner-name{
+    margin-top: 180px;
+  }
+  
+}
