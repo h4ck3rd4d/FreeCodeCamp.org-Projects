@@ -24,7 +24,7 @@ An empty date parameter should return the current time in a JSON object with a u
 
 ## Home page
 
-![Image of Homepage](homepage.png)
+![Image of Homepage](https://github.com/kreesesconner/FreeCodeCamp.org-Projects/blob/main/APIsAndMicroServices/boilerplate-project-timestamp/images/homepage.png)
 
 ## Test view of Unix Date variable i.e. (946598400000)
 
