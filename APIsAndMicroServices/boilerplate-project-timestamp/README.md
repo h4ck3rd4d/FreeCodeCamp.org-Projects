@@ -1,7 +1,10 @@
 
 # Timestamp Microservice Project
 
-This is my submission to the Free Code Camp Timestamp Microservice Project
+This is my submission to the Free Code Camp Timestamp Microservice Project. The live site can be found [here](https://catkin-evanescent-lamprey.glitch.me/).
+
+## Primary Technology Stack
+Node.js, Express
 
 ## Parameters
 
@@ -19,4 +22,23 @@ An empty date parameter should return the current time in a JSON object with a u
 
 An empty date parameter should return the current time in a JSON object with a utc key
 
+## Home page
+
+![Image of Homepage](/images/homepage.png)
+
+## Test view of Unix Date variable i.e. (946598400000)
+
+![Image of Unixdate](/images/unixexample.png)
+
+## Test view of Date-Time format i.e. (1999-12-21)
+
+![Image of Datetime](/images/datetimeexample.png)
+
+## Test view of Error Handling
+
+![Image of Error](/images/errorexample.png)
+
+## Experienced Gained
+
+As this was my first project using these technologies, the whole project was a big learning experience. Overall the hardest part was figuring out the formats for the date out put to match the expected parameters. There wasn't much as far as guidance in the parameters so it just took a lot of trial and error on my part.
 
