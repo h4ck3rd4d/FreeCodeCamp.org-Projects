@@ -1,0 +1,33 @@
+.albums-div {
+  display: flex;
+  margin: 5px auto;
+  width: 80%;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.album-individual {
+  border: 2px solid black;
+  margin: 5px auto 5px auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  background-color: rgba(250, 250, 250, 0.8);
+  line-height: 0.8em;
+  height: 90%;
+}
+.album-title {
+  margin-top: 25px;
+
+  font-weight: bold;
+}
+.albums-div img {
+  width: 400px;
+  text-align: center;
+  border-radius: 5px;
+  border: 5px solid black;
+}
+
+.buffer {
+  height: 100px;
+}
