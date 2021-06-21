@@ -1,3 +1,7 @@
+.album-heading {
+  text-align: center;
+}
+
 .albums-div {
   display: flex;
   margin: 5px auto;

@@ -23,7 +23,7 @@ function Navbar() {
             </a>
           </li>
           <li className='nav-item dropdown'>
-            <a className='nav-link dropdown-toggle' href='#james'>
+            <a className='nav-link' href='#james'>
               Members
             </a>
             <div className='dropdown-content'>

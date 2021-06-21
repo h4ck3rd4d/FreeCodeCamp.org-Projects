@@ -106,13 +106,14 @@ const albumInfo = [
 function Albums() {
   return (
     <div>
+      <h2 className='album-heading'>Albums</h2>
       <div className='albums-div'>
         {albumInfo.map((album, i) => (
           <div>
             <div className='buffer' id={i}></div>
 
             <div className='album-individual'>
-              <img className='covers' src={`${album.cover}`}></img>
+              <img className='covers' src={`${album.cover}`} alt=''></img>
               <h3 className='album-title'>"{`${album.title}`}"</h3>
               <p>{`Released on ${album.released}`}</p>
               <h3>Singles</h3>
