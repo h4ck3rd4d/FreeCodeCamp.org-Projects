@@ -24,19 +24,19 @@ An empty date parameter should return the current time in a JSON object with a u
 
 ## Home page
 
-![Image of Homepage](/images/homepage.png)
+![Image of Homepage](https://github.com/kreesesconner/FreeCodeCamp.org-Projects/blob/main/APIsAndMicroServices/boilerplate-project-timestamp/images/homepage.png)
 
 ## Test view of Unix Date variable i.e. (946598400000)
 
-![Image of Unixdate](/images/unixexample.png)
+![Image of Unixdate](https://github.com/kreesesconner/FreeCodeCamp.org-Projects/blob/main/APIsAndMicroServices/boilerplate-project-timestamp/images/unixexample.png)
 
 ## Test view of Date-Time format i.e. (1999-12-21)
 
-![Image of Datetime](/images/datetimeexample.png)
+![Image of Datetime](https://github.com/kreesesconner/FreeCodeCamp.org-Projects/blob/main/APIsAndMicroServices/boilerplate-project-timestamp/images/datetimeexample.png)
 
 ## Test view of Error Handling
 
-![Image of Error](/images/errorexample.png)
+![Image of Error](https://github.com/kreesesconner/FreeCodeCamp.org-Projects/blob/main/APIsAndMicroServices/boilerplate-project-timestamp/images/errorexample.png)
 
 ## Experienced Gained
 
